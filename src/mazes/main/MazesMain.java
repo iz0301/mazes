@@ -8,8 +8,8 @@ import javax.swing.JFrame;
 
 public class MazesMain {
 
-	static int WIDTH = 20;
-	static int HEIGHT = 20;
+	static int WIDTH = 30;
+	static int HEIGHT = 30;
 	static boolean showSolution = false;
 	
 	public static void main(String[] args) {
