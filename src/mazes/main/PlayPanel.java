@@ -29,7 +29,7 @@ public class PlayPanel extends JPanel implements KeyListener{
 	}
 	
 	@Override
-	public void paint(Graphics g){
+	public void paintComponent(Graphics g){
 		g.clearRect(0, 0, (wallSize+1)*map.width, (wallSize+1)*map.height);
 		for(int x = 0; x < map.width; x++){
 			for(int y = 0; y < map.height; y++){

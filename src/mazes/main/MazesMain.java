@@ -21,10 +21,7 @@ public class MazesMain {
 			size = Integer.parseInt(args[2]);
 		} catch (NullPointerException e){}catch(ArrayIndexOutOfBoundsException e){}
 		PlayPanel panel = new PlayPanel(Map.generateRandomMaze(WIDTH, HEIGHT), size);
-		frame.add(panel);
-		frame.setVisible(true);
-		frame.requestFocus();
-		panel.requestFocus();
+
 		JButton regen = new JButton("Regen");
 		regen.setBounds(0, 0, 10, 10);
 		regen.addActionListener(new ActionListener(){
@@ -58,6 +55,10 @@ public class MazesMain {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setResizable(true);
 		//frame.setUndecorated(true);
+		frame.add(panel);
+		frame.setVisible(true);
+		frame.requestFocus();
+		panel.requestFocus();
 		frame.setSize(700,700);
 		frame.setVisible(true);
 		panel.repaint();
